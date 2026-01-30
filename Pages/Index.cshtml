@@ -1,0 +1,23 @@
+﻿@page
+@model XML_Class.Pages.IndexModel
+@{
+    ViewData["Title"] = "XML Serialization Practical";
+}
+
+<div class="container mt-5">
+    <div class="card shadow">
+        <div class="card-header bg-info text-white">
+            <h3>XML Classes (Serialization)</h3>
+        </div>
+        <div class="card-body">
+            <h5>Generated XML Output:</h5>
+            <div class="bg-light p-3 border">
+                @* XML formatting theriya ithe use pannuvom *@
+                <pre>@Model.XmlOutput</pre>
+            </div>
+            
+            <hr />
+            <p class="text-muted">Intha output C# object-ai <code>XmlSerializer</code> moolamaaga XML-aaga maatriyathu.</p>
+        </div>
+    </div>
+</div>
